@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="App">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Example: a tree menu with angular</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/angular.min.js"></script>
+        <script src="js/MenuAngular.js"></script>
+    </head>
+    <body ng-controller="SimpleCtrl">
+        <table width="33%">
+            <tr>
+                <td><label for="inputSearch" class="control-label">Search:</label></td>
+                <td><input type="text" id="inputSearch" class="field-value" ng-model="Name"/></td>
+            </tr>
+        </table>
+        <nav>
+            <section>
+                <ul>
+                    <li ng-repeat="menu in menus">{{menu.Name}}
+                    <ul ng-repeat="submenu in menu.Children | filter:Name">
+                        <li>{{ submenu.Name }}</li>
+                    </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        </div>
+    </body>
+</html>
