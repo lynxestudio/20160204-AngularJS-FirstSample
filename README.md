@@ -35,32 +35,12 @@ Una parte integral para trabajar con angular es el llamado <b>scope</b> que en r
     <p>
       <ul>
         <li><b>ng-app:</b> Esta directiva sirve para incluir e iniciar <b>AngularJS</b> y que se pueda utilizar en un página HTML. Generalmente esta directiva va en la etiqueta BODY o en HTML.
-        <pre>
-          &lt;!doctype html&gt;
-&lt;html ng-app=&quot;App&quot;&gt;
-        </pre>
         </li>
         <li><b>ng-controller:</b> Esta directiva indica que controlador se va a utilizar en esa página o vista. Angular nos permite tener múltiples instancias de el mismo controlador en la aplicación, permitiéndonos reutilizar un montón de código.
-        <pre>
-    &lt;body ng-controller=&quot;SimpleCtrl&quot;&gt;      
-        </pre>
         </li>
         <li><b>ng-repeat:</b> Con esta directiva se puede enumerar o iterar en una lista de objetos similar a recorrer un de un arreglo con la instrucción <b>foreach</b> de algunos lenguajes de programación. Adicionalmente a esta directiva le agrego la directiva <b>filter:Name</b> la cuál establece el filtro de búsqueda dentro del arreglo, en este caso el filtro es el valor de la variable enlazada con <b>ng-model</b>.
-        <pre>
-          &lt;ul&gt;
-                    &lt;li ng-repeat=&quot;menu in menus&quot;&gt;{{menu.Name}}
-                    &lt;ul ng-repeat=&quot;submenu in menu.Children | filter:Name&quot;&gt;
-                        &lt;li&gt;{{ submenu.Name }}&lt;/li&gt;
-                    &lt;/ul&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
-        </pre>
         </li>
         <li><b>ng-model:</b> Esta directiva sirva para enlazar el valor de una variable a un control HTML, generalmente se utiliza con los controles INPUT.
-        <pre>
-          &lt;td&gt;&lt;label for=&quot;inputSearch&quot; class=&quot;control-label&quot;&gt;Search:&lt;/label&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;input type=&quot;text&quot; id=&quot;inputSearch&quot; class=&quot;field-value&quot; ng-model=&quot;Name&quot;/&gt;&lt;/td&gt;
-        </pre>
         </li>
       </ul>
     </p>
