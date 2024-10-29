@@ -21,14 +21,8 @@
 Una parte integral para trabajar con angular es el llamado <b>scope</b> que en realidad es un alias para el <i>ViewModel</i> es decir el componente que permite que se comuniquen la vista y el controlador.</p>
     <p>Aquí el código fuente del archivo <i>MenuAngular.js</i> el cuál contiene el <b>JSON</b> y la declaración del <i>controller</i>.</p>
       <div>
-      <IMG src="picture_library/Angular/MenuAngular.png">
+      <IMG src="images/MenuAngular.png">
       </div><br>
-    <div>Aquí el código fuente de la página HTML:</div>
-      <!--------------PRE HTML------------------>
-      <div>
-      <IMG src="picture_library/Angular/angularSample.png">
-      </div><br>
-      <!--------------PRE HTML------------------>
     <h2>¿Qué son las directives?</h2>
     <p align="justify">Son atributos HTML que llaman funciones pertenecientes al framework para extender de manera dinámica la funcionalidad del elemento HTML al cual pertenecen, esta es la manera básica de crear elementos HTML específicos para la aplicación, encapsular estructuras DOM complejas o manipular las hojas de estilo.</p>
     <p>A continuación una breve descripción de las directivas que se utilizaron en el ejemplo:</p>
@@ -47,13 +41,13 @@ Una parte integral para trabajar con angular es el llamado <b>scope</b> que en r
     <div>Las siguientes imágenes muestran la página en su ejecución.</div>
     <div><b>Fig 1</b> La página HTML en ejecución.</div><br>
     <div>
-    <IMG src="picture_library/Angular/fig1.png" width="563" height="455">
+    <IMG src="images/fig1.png" width="563" height="455">
     </div><br>
     <div><b>Fig 2</b> Ejemplo de una búsqueda con una coincidencia.</div><br>
     <div>
-    <IMG src="picture_library/Angular/fig2.png" width="563" height="455">
+    <IMG src="images/fig2.png" width="563" height="455">
     </div><br>
     <div><b>Fig 3</b> Una búsqueda con dos coincidencias.</div><br>
     <div>
-    <IMG src="picture_library/Angular/fig3.png" width="563" height="455">
+    <IMG src="images/fig3.png" width="563" height="455">
     </div>
